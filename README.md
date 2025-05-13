@@ -2,7 +2,7 @@
 
 ## Introdução
 
-Este projeto tem como objetivo aplicar conceitos de banco de dados relacionais e comandos fundamentais de SQL em um cenário simulado sobre cafés especiais. A proposta é treinar habilidades técnicas ao mesmo tempo em que se busca desenvolver uma leitura mais analítica dos dados, extraindo informações relevantes para o contexto apresentado.
+A escolha deste projeto está diretamente ligada à minha experiência como barista, profissão que despertou em mim grande interesse pelo universo do café. Embora tenha decidido migrar para a área de Análise de Dados em busca de melhores oportunidades e crescimento profissional, optei por unir esses dois mundos em um projeto que me permitisse praticar conceitos fundamentais de SQL em um tema com o qual tenho forte conexão. A proposta é aplicar conhecimentos técnicos em um cenário simulado, desenvolvendo também uma visão mais analítica a partir dos dados apresentados.
 
 ## Objetivo
 
