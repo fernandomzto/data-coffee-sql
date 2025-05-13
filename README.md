@@ -1,55 +1,73 @@
-# Análise de cafés especiais utilizando SQL
+# Análise de Cafés Especiais com SQL
 
-Introdução
+## Introdução
 
-Este projeto utiliza SQL para armazenar, consultar e analisar dados de cafés especiais com base no protocolo da Specialty Coffee Association (SCA). O foco está na prática de comandos SQL fundamentais e na extração de insights sobre produtores, espécies e notas de avaliação.
+Este projeto tem como objetivo aplicar conceitos de banco de dados relacionais e comandos fundamentais de SQL em um cenário simulado sobre cafés especiais. A proposta é treinar habilidades técnicas ao mesmo tempo em que se busca desenvolver uma leitura mais analítica dos dados, extraindo informações relevantes para o contexto apresentado.
 
-Objetivo
+## Objetivo
 
-O objetivo desse projeto foi treinar a modelagem de banco de dados relacionais e praticar comandos básicos de SQL realizando consultas a partir de um cenário fictício envolvendo cafés especiais.
+O objetivo principal foi simular um cenário onde dados de cafés especiais são armazenados e analisados com SQL, promovendo:
 
-Estrutura dos Dados
+* Prática na criação e modelagem de banco de dados relacionais;
+* Exercício de comandos essenciais do SQL;
+* Resolução de perguntas de negócio a partir dos dados;
+* Desenvolvimento inicial de insights com base em análise exploratória.
 
-Solicitei à um assistente de inteligência virtual que criasse uma lista de cafés especiais avaliados de acordo com o protocolo da SCA, das safras de 2023 e 2024 e utilizando dados reais. Apesar de citar as fontes, não foi possível verificar a veracidade das informações, portanto trataremos os dados dos cafés obtidos como fictícios.
-As fontes citadas foram concursos como Cup of Excellence (2023 e 2024), Coffee of the Year (2023), avaliações da SCA, Coffee Review, relatórios da Embrapa e artigos de revistas como Forbes e NeoFeed e Globo Rural.
+## Estrutura dos Dados
 
-Ferramentas utilizadas
+Os dados foram gerados com o apoio de uma ferramenta de inteligência artificial, com base em fontes reais, como:
 
-MySQL
-MySQL Workbench
-SQL
+* Cup of Excellence (2023 e 2024);
+* Coffee of the Year (2023);
+* Specialty Coffee Association (SCA);
+* Coffee Review;
+* Relatórios da Embrapa;
+* Artigos da Forbes, NeoFeed e Globo Rural.
 
-Principais consultas e análises
+Apesar da solicitação das fontes serem reais, não foi possível verificar a veracidade dos dados, logo devem-se tratar os dados do projeto como fictícios com fins exclusivamente educacionais.
 
-Visando abordar a maioria dos comandos fundamentais do SQL, elaborei as seguintes consultas:
-1. Listagem das notas gerais dos cafés, do maior para o menor indicando o produtor,
-país de origem, espécie, variedade e nota geral. (Utilizando JOIN para relacionar cafés e produtores)
-2. Quantas espécies de cada (arábica ou canéfora) foram analisadas? (Utilizando COUNT e GROUP BY)
-3. Quais são os produtores com nota geral maior que 91? 
-4. Quais são os produtores do Brasil com nota maior que 90? (Utilizando AND)
-5. Qual a média de nota dos cafés por país (do maior para o menor)? (Utilizando AVG)
-6. Quais produtores possuem nota geral maior que a média? (Utilizando subquery)
-7. Quais produtores possuem nota geral maior que a média? (Utilizando outra forma com "WITH")
+## Ferramentas Utilizadas
 
-Estrutura do banco de dados
+* **MySQL**
+* **MySQL Workbench**
+* **SQL**
+* **Power Bi** (visualização da estrutura dos dados)
 
-![Estrutura](imagens/estruturabanco.png)
+## Consultas Realizadas
 
-Aprendizados
+A seguir, algumas das consultas elaboradas com foco em cobrir os comandos básicos de SQL:
 
-- Pratiquei um pouco a modelagem de dados relacionais, criando um banco de dados e tabelas, determinando cada tipo, chave primária, etc.
-- Reforcei o uso de comandos básicos de SQL (SELECT, WHERE, FROM, GROUP BY, JOIN, etc).
-- Iniciei o entendimento em como estruturar consultas usando subquery e CTE.
-- Desenvolvi boas práticas de escrita SQL para facilitar a manutenção e colaboração futura.
-- Comecei a explorar consultas mais avançadas com subqueries e CTEs, tornando minhas análises mais dinâmicas e reutilizáveis.
+1. Listagem dos cafés com maior nota geral, incluindo produtor, país, espécie e variedade. (comando `JOIN`);
+2. Contagem de amostras por espécie (`COUNT` + `GROUP BY`);
+3. Produtores com nota geral acima de 91;
+4. Produtores brasileiros com nota maior que 90 (`WHERE` + `AND`);
+5. Média de notas por país, ordenadas de forma decrescente (`AVG`, `GROUP BY`, `ORDER BY`);
+6. Produtores com nota acima da média geral (usando **subquery**);
+7. Mesma análise anterior, mas utilizando **CTE** com `WITH`.
 
-Próximos passos
+## Estrutura do Banco de Dados
 
-- Aprender a integrar o banco de dados com ferramentas de visualização como Power Bi.
-- Aprender a analisar mais criteriosamente os dados, visando respostas para perguntas de negócios.
-- Trabalhar com uma quantidade maior de dados, e definitivamente fixar e estar totalmente familiarizado com a linguagem SQL para análises mais complexas.
+A estrutura relacional foi criada com foco na normalização, separando cafés, produtores e categorias em tabelas distintas, garantindo integridade referencial e facilitando as consultas.
 
-Contato
+![Estrutura do Banco de Dados](imagens/estruturabanco.png)
 
-[LinkedIn](https://www.linkedin.com/in/fernandomiyazato)
-[Email](mailto:mztofernando@gmail.com)
+## Principais Aprendizados
+
+* Criação e estruturação de banco de dados relacional;
+* Consolidação de comandos fundamentais do SQL;
+* Introdução ao uso de subqueries e CTEs (Common Table Expressions);
+* Organização do código com foco em legibilidade;
+* Compreensão inicial da transformação de dados em respostas para perguntas de negócio.
+
+## Próximos Passos
+
+* Aprender a integrar o banco de dados com ferramentas de visualização como Power Bi;
+* Aprofundar a análise de dados com foco em métricas estratégicas;
+* Trabalhar com datasets maiores e mais variados, simulando contextos reais;
+* Consolidar o domínio de SQL para aplicação em projetos mais complexos.
+* Adquirir conhecimento sobre novas ferramentas como o aprendizado do uso de bibliotecas do Python com foco para análise de dados.
+
+## Contato
+
+* [LinkedIn](https://www.linkedin.com/in/fernandomiyazato)
+* [Email](mailto:mztofernando@gmail.com)
